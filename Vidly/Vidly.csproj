@@ -179,11 +179,20 @@
     <Compile Include="Migrations\201904241514100_CustomerClass.Designer.cs">
       <DependentUpon>201904241514100_CustomerClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904241530552_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201904241530552_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201904241530552_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904241538090_AddMembershipType.cs" />
+    <Compile Include="Migrations\201904241538090_AddMembershipType.Designer.cs">
+      <DependentUpon>201904241538090_AddMembershipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -269,6 +278,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904241514100_CustomerClass.resx">
       <DependentUpon>201904241514100_CustomerClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904241530552_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201904241530552_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904241538090_AddMembershipType.resx">
+      <DependentUpon>201904241538090_AddMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
