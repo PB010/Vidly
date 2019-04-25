@@ -107,3 +107,4 @@ C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribedToCustomer.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
