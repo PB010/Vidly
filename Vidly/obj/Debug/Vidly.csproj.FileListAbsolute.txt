@@ -113,3 +113,4 @@ C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulatingNameProprietyInMembershipTypes.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedBirthdatePropertyToCustomer.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.FixedTheTypeOfBirthdate.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.FIXEDCustomerBirthdate.resources
