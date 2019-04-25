@@ -14,7 +14,8 @@ else
     <table class="table table-bordered table-hover">
         <thead>
         <tr>
-            <th scope="row">Movies</th>
+            <th>Movies</th>
+            <th>Genre</th>
         </tr>
         </thead>
         <tbody>
@@ -28,6 +29,9 @@ else
                         new {id = movie.Id},
                         null
                         )
+                </td>
+                <td>
+                    @movie.Genre.Name
                 </td>
             </tr>
         }
