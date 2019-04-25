@@ -207,6 +207,10 @@
     <Compile Include="Migrations\201904251830055_AddedBirthdatePropertyToCustomer.Designer.cs">
       <DependentUpon>201904251830055_AddedBirthdatePropertyToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904251846195_FixedTheTypeOfBirthdate.cs" />
+    <Compile Include="Migrations\201904251846195_FixedTheTypeOfBirthdate.Designer.cs">
+      <DependentUpon>201904251846195_FixedTheTypeOfBirthdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -319,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904251830055_AddedBirthdatePropertyToCustomer.resx">
       <DependentUpon>201904251830055_AddedBirthdatePropertyToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904251846195_FixedTheTypeOfBirthdate.resx">
+      <DependentUpon>201904251846195_FixedTheTypeOfBirthdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
