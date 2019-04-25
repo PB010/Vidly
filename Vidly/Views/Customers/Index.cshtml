@@ -9,7 +9,8 @@
 <table class="table table-bordered table-hover">
 <thead>
 <tr>
-    <th scope="row">Movies</th>
+    <th scope="row">Customers</th>
+    <th>Discount Rate</th>
 </tr>
 </thead>
 <tbody>
@@ -22,6 +23,9 @@
                 "Customers",
                 new {id = customer.Id},
                 null)
+        </td>
+        <td>
+            @customer.MembershipType.DiscountRate%
         </td>
     </tr>
 }
