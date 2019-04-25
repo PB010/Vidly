@@ -115,3 +115,4 @@ C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.FixedTheTypeOfBirthdate.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.FIXEDCustomerBirthdate.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.LastFixForBirthdate.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedMoviesDatabase.resources

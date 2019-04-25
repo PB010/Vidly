@@ -219,6 +219,10 @@
     <Compile Include="Migrations\201904251856549_LastFixForBirthdate.Designer.cs">
       <DependentUpon>201904251856549_LastFixForBirthdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904251905111_AddedMoviesDatabase.cs" />
+    <Compile Include="Migrations\201904251905111_AddedMoviesDatabase.Designer.cs">
+      <DependentUpon>201904251905111_AddedMoviesDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -340,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904251856549_LastFixForBirthdate.resx">
       <DependentUpon>201904251856549_LastFixForBirthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904251905111_AddedMoviesDatabase.resx">
+      <DependentUpon>201904251905111_AddedMoviesDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
