@@ -1,42 +1,52 @@
-﻿@model IEnumerable<Vidly.Models.Movie>
+﻿@using WebGrease.Css.Extensions
+@model IEnumerable<Vidly.Models.Movie>
 @{
     ViewBag.Title = "Movies";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Movies</h2>
+<button type="submit" class="btn btn-primary">
+    @Html.ActionLink("New Movie",
+        "New",
+        "Movies",
+        null,
+        new {@class = "btn-primary", style = "text-decoration: none;"})
+</button>
+<br/>
 @if (!Model.Any())
 {
     <p>We don't have any movies yet.</p>
 }
 else
-{
+{   
+    <br/>
     <table class="table table-bordered table-hover">
         <thead>
-        <tr>
-            <th>Movies</th>
-            <th>Genre</th>
-        </tr>
+            <tr>
+                <th>Movies</th>
+                <th>Genre</th>
+            </tr>
         </thead>
         <tbody>
             @if (Model.Any())
             {
                 foreach (var movie in Model)
-                 {
-                     <tr>
-                         <td>
-                             @Html.ActionLink(movie.Name,
-                                 "Details",
-                                 "Movies",
-                                 new {id = movie.Id},
-                                 null
-                                 )
-                         </td>
-                         <td>
-                             @movie.Genre.Name
-                         </td>
-                     </tr>
-                 }
+                {
+                    <tr>
+                        <td>
+                            @Html.ActionLink(movie.Name,
+                                "Edit",
+                                "Movies",
+                                new { id = movie.Id },
+                                null
+                                )
+                        </td>
+                        <td>
+                            @movie.Genre.Name
+                        </td>
+                    </tr>
+                }
             }
             else
             {
