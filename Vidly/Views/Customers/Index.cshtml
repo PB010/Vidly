@@ -14,20 +14,31 @@
 </tr>
 </thead>
 <tbody>
-@foreach (var customer in Model)
-{
-    <tr>
-        <td>
-            @Html.ActionLink(customer.Name,
-                "Details",
-                "Customers",
-                new {id = customer.Id},
-                null)
-        </td>
-        <td>
-            @customer.MembershipType.Name
-        </td>
-    </tr>
-}
+    @if (Model.Any())
+    {
+        foreach (var customer in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(customer.Name,
+                        "Details",
+                        "Customers",
+                        new {id = customer.Id},
+                        null)
+                </td>
+                <td>
+                    @customer.MembershipType.Name
+                </td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr>
+            <td>
+                <h2>We don't have any customers yet.</h2>
+            </td>
+        </tr>
+    }
 </tbody>
 </table>
