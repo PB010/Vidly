@@ -119,3 +119,4 @@ C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedGenreModelForMovies.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulatingGenreDb.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddThrillerGenre.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.RequiredFieldsForMoviesAndCustomerModel.resources

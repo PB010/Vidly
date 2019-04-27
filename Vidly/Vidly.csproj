@@ -235,6 +235,10 @@
     <Compile Include="Migrations\201904271401265_AddThrillerGenre.Designer.cs">
       <DependentUpon>201904271401265_AddThrillerGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904271716226_RequiredFieldsForMoviesAndCustomerModel.cs" />
+    <Compile Include="Migrations\201904271716226_RequiredFieldsForMoviesAndCustomerModel.Designer.cs">
+      <DependentUpon>201904271716226_RequiredFieldsForMoviesAndCustomerModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -374,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904271401265_AddThrillerGenre.resx">
       <DependentUpon>201904271401265_AddThrillerGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904271716226_RequiredFieldsForMoviesAndCustomerModel.resx">
+      <DependentUpon>201904271716226_RequiredFieldsForMoviesAndCustomerModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
