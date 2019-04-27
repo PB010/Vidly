@@ -6,21 +6,20 @@
 }
 
 <h2>Movies</h2>
-<button type="submit" class="btn btn-primary">
-    @Html.ActionLink("New Movie",
-        "New",
-        "Movies",
-        null,
-        new {@class = "btn-primary", style = "text-decoration: none;"})
-</button>
-<br/>
+<p>
+@Html.ActionLink("New Movie",
+    "New",
+    "Movies",
+    null,
+    new {@class = "btn btn-primary"})
+</p>
+    
 @if (!Model.Any())
 {
     <p>We don't have any movies yet.</p>
 }
 else
 {   
-    <br/>
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
