@@ -239,6 +239,10 @@
     <Compile Include="Migrations\201904271716226_RequiredFieldsForMoviesAndCustomerModel.Designer.cs">
       <DependentUpon>201904271716226_RequiredFieldsForMoviesAndCustomerModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904271849406_MadeSomeMovieFieldsNullable.cs" />
+    <Compile Include="Migrations\201904271849406_MadeSomeMovieFieldsNullable.Designer.cs">
+      <DependentUpon>201904271849406_MadeSomeMovieFieldsNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -381,6 +385,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904271716226_RequiredFieldsForMoviesAndCustomerModel.resx">
       <DependentUpon>201904271716226_RequiredFieldsForMoviesAndCustomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904271849406_MadeSomeMovieFieldsNullable.resx">
+      <DependentUpon>201904271849406_MadeSomeMovieFieldsNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
