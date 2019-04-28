@@ -120,4 +120,9 @@ C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulatingGenreDb.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddThrillerGenre.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.RequiredFieldsForMoviesAndCustomerModel.resources
-C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.MadeSomeMovieFieldsNullable.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
