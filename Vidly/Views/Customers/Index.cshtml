@@ -24,8 +24,9 @@
     </tbody>
 </table>
 
+
 @section scripts
-{
+{ 
     <script>
         $(document).ready(function () {
             var table = $("#customers").DataTable({
@@ -50,7 +51,7 @@
                         }
                     }
                 ]
-        });
+            });
 
             $("#customers").on("click", ".js-delete", function () {
                 var button = $(this);
