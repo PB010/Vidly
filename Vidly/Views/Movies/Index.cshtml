@@ -7,7 +7,7 @@
 
 <h2>Movies</h2>
 <p>
-@Html.ActionLink("New Movie",
+    @Html.ActionLink("New Movie",
     "New",
     "Movies",
     null,
@@ -31,18 +31,17 @@
 @section scripts
 {
     <script>
-        $(document).ready(function () {
-
+        $(document).ready(function() {
             var table = $("#movieTable").DataTable({
                 ajax: {
-                    url: "/api/movies",
+                    url: "api/movies/",
                     dataSrc: ""
                 },
                 columns: [
                     {
                         data: "name",
                         render: function(data, type, movie) {
-                            return "<a href='/movies/edit/" + movie.id + "'>" + data + "</a>";
+                            return "<a href='movies/edit/" + movie.id + "'>" + data + "</a>";
                         }
                     },
                     {
@@ -51,21 +50,21 @@
                     {
                         data: "id",
                         render: function(data) {
-                            return "<button class='btn-link js-movies' data-movie-id=" + data + ">Delete</button>";
+                            return "<button class='btn-link js-movies' data-movies-id=" + data + "> Delete </button>";
                         }
                     }
                 ]
             });
 
-            $("#movieTable").on("click", ".js-movies", function () {
+            $('#movieTable').on("click", ".js-movies", function () {
                 var button = $(this);
 
                 bootbox.confirm("Are you sure you want to delete this movie?", function(result) {
                     if (result) {
                         $.ajax({
-                            url: "/api/movies/" + button.attr("data-movie-id"),
+                            url: "api/movies/" + button.attr("data-movies-id"),
                             method: "DELETE",
-                            success: function () {
+                            success: function() {
                                 table.row(button.parents("tr")).remove().draw();
                             }
                         });
