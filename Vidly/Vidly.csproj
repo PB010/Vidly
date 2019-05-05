@@ -18,7 +18,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44349</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -262,6 +262,10 @@
     <Compile Include="Migrations\201905021157395_SeedUsers.cs" />
     <Compile Include="Migrations\201905021157395_SeedUsers.Designer.cs">
       <DependentUpon>201905021157395_SeedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905051446247_AddDrivingLicenseToApplicationUser.cs" />
+    <Compile Include="Migrations\201905051446247_AddDrivingLicenseToApplicationUser.Designer.cs">
+      <DependentUpon>201905051446247_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -586,6 +590,9 @@
     <EmbeddedResource Include="Migrations\201905021157395_SeedUsers.resx">
       <DependentUpon>201905021157395_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905051446247_AddDrivingLicenseToApplicationUser.resx">
+      <DependentUpon>201905051446247_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -605,11 +612,10 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49741</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49741/</IISUrl>
+          <IISUrl>https://localhost:44349/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl>https://localhost:44349/</CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
