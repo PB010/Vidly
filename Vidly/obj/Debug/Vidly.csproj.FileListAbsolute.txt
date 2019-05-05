@@ -130,3 +130,4 @@ C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\AutoMapper.dll
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\AutoMapper.xml
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicationUser.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedPhoneNumberToRegistrationForm.resources
