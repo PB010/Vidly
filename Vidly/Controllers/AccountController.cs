@@ -152,7 +152,7 @@ namespace Vidly.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser
+                var user = new ApplicationUserModel
                 {
                     UserName = model.Email,
                     Email = model.Email,
@@ -382,7 +382,7 @@ namespace Vidly.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser
+                var user = new ApplicationUserModel
                 {
                     UserName = model.Email,
                     Email = model.Email,

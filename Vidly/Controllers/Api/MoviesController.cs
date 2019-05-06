@@ -12,13 +12,14 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.Api
 {
+    [Authorize (Roles = RoleName.CanManageMovies)]
     public class MoviesController : ApiController
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContextModel _context;
 
         public MoviesController()
         {
-            _context = new ApplicationDbContext();
+            _context = new ApplicationDbContextModel();
         }
 
         //GET api/movies
