@@ -69,8 +69,17 @@ namespace Vidly.Controllers
         // GET: Customers
         public ActionResult Index()
         {
+            //if (MemoryCache.Default["MembershipType"] == null)
+            //{
+            //    MemoryCache.Default["MembershipType"] = _context.MembershipTypes.ToList();
+            //}
+            //
+            //var genres = MemoryCache.Default["MembershipType"] as IEnumerable<MembershipType>;
+
             return View();
         }
+
+        
 
 
         public ActionResult Details(int? id)

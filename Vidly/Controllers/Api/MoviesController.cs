@@ -24,6 +24,7 @@ namespace Vidly.Controllers.Api
 
         //GET api/movies
 
+        [OverrideAuthorization]
         public IEnumerable<MoviesDto> GetMovies()
         {
             return _context.Movies
