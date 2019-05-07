@@ -20,7 +20,7 @@ namespace Vidly.Controllers.Api
         }
 
         [HttpPost]
-        public IHttpActionResult NewRental(NewRentalDto newRental)
+        public IHttpActionResult GetRentals(NewRentalDto newRental)
         {
             var customer = _context.Customers.Single(c => c.Id == newRental.CustomerId);
             var movies = _context.Movies.Where(m => newRental.MovieIds.Contains(m.Id)).ToList();
@@ -31,7 +31,7 @@ namespace Vidly.Controllers.Api
                     return BadRequest("This movie is not available.");
 
                 movie.NrInStock--;
-
+                
                 var rental = new Rental
                 {
                     Customer = customer,

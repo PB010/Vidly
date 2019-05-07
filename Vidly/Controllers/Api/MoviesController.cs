@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Http.Results;
 using System.Data.Entity;
+using System.Runtime.Remoting.Messaging;
 using AutoMapper;
 using Vidly.Dtos;
 using Vidly.Models;
@@ -25,12 +26,21 @@ namespace Vidly.Controllers.Api
         //GET api/movies
 
         [OverrideAuthorization]
-        public IEnumerable<MoviesDto> GetMovies()
+        public IHttpActionResult GetMovies(string query = null)
         {
-            return _context.Movies
+            var moviesQuery = _context.Movies
                 .Include(m => m.Genre)
+                .Where(m => m.NrInStock > 0);
+
+
+            if (!String.IsNullOrWhiteSpace(query))
+                moviesQuery = moviesQuery.Where(m => m.Name.Contains(query));
+            
+            var moviesDto = moviesQuery
                 .ToList()
                 .Select(Mapper.Map<Movie, MoviesDto>);
+
+            return Ok(moviesDto);
         }
 
         //GET api/movies/1
