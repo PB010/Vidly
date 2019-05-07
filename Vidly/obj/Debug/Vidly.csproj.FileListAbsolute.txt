@@ -136,3 +136,5 @@ C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\Glimpse.Core.dll
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\Glimpse.Mvc5.dll
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\Glimpse.Ado.dll
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\Glimpse.EF6.dll
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedRentalModel.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddedRequiredToRental.resources

@@ -42,7 +42,7 @@ namespace Vidly
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context) 
         {
-            var manager = new ApplicationUserManager(new UserStore<ApplicationUserModel>(context.Get<ApplicationDbContextModel>()));
+            var manager = new ApplicationUserManager(new UserStore<ApplicationUserModel>(context.Get<ApplicationDbContext>()));
             // Configure validation logic for usernames
             manager.UserValidator = new UserValidator<ApplicationUserModel>(manager)
             {

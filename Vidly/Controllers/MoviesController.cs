@@ -12,11 +12,11 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        private readonly ApplicationDbContextModel _context;
+        private readonly ApplicationDbContext _context;
 
         public MoviesController()
         {
-            _context = new ApplicationDbContextModel();
+            _context = new ApplicationDbContext();
             
         }
 

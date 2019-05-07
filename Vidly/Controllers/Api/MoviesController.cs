@@ -15,11 +15,11 @@ namespace Vidly.Controllers.Api
     [Authorize (Roles = RoleName.CanManageMovies)]
     public class MoviesController : ApiController
     {
-        private readonly ApplicationDbContextModel _context;
+        private readonly ApplicationDbContext _context;
 
         public MoviesController()
         {
-            _context = new ApplicationDbContextModel();
+            _context = new ApplicationDbContext();
         }
 
         //GET api/movies
