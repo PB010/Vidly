@@ -48,6 +48,9 @@
     <Reference Include="AutoMapper, Version=4.1.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.4.1.0\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
     <Reference Include="Glimpse.Ado, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Glimpse.Ado.1.7.3\lib\net45\Glimpse.Ado.dll</HintPath>
     </Reference>
@@ -311,6 +314,26 @@
     <Compile Include="Migrations\201905071842096_Fix.Designer.cs">
       <DependentUpon>201905071842096_Fix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905081540395_AddedOnceAgainNrAvailableToMovieModel.cs" />
+    <Compile Include="Migrations\201905081540395_AddedOnceAgainNrAvailableToMovieModel.Designer.cs">
+      <DependentUpon>201905081540395_AddedOnceAgainNrAvailableToMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905081547013_1.cs" />
+    <Compile Include="Migrations\201905081547013_1.Designer.cs">
+      <DependentUpon>201905081547013_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905081547304_2.cs" />
+    <Compile Include="Migrations\201905081547304_2.Designer.cs">
+      <DependentUpon>201905081547304_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905081558307_UpdatingNrAvailable.cs" />
+    <Compile Include="Migrations\201905081558307_UpdatingNrAvailable.Designer.cs">
+      <DependentUpon>201905081558307_UpdatingNrAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905081654141_NullabelNrInStockAndNrAvailable.cs" />
+    <Compile Include="Migrations\201905081654141_NullabelNrInStockAndNrAvailable.Designer.cs">
+      <DependentUpon>201905081654141_NullabelNrInStockAndNrAvailable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationUserModel.cs" />
@@ -331,6 +354,8 @@
     <Compile Include="Views\ViewModels\MovieFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="App_Readme\Elmah.txt" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -442,6 +467,9 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\final-theme.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="Content\typeahead.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -455,6 +483,10 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -530,6 +562,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Scripts\typeahead.bundle.js" />
     <Content Include="Scripts\typeahead.bundle.min.js" />
     <Content Include="Scripts\typeahead.jquery.js" />
@@ -577,6 +611,10 @@
     <Content Include="Views\Movies\MovieForm.cshtml" />
     <Content Include="Views\Movies\ReadOnlyList.cshtml" />
     <Content Include="Views\Rentals\New.cshtml" />
+    <Content Include="Views\Rentals\MyRentals.cshtml" />
+    <None Include="Web.Testing.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -667,10 +705,35 @@
     <EmbeddedResource Include="Migrations\201905071842096_Fix.resx">
       <DependentUpon>201905071842096_Fix.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905081540395_AddedOnceAgainNrAvailableToMovieModel.resx">
+      <DependentUpon>201905081540395_AddedOnceAgainNrAvailableToMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905081547013_1.resx">
+      <DependentUpon>201905081547013_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905081547304_2.resx">
+      <DependentUpon>201905081547304_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905081558307_UpdatingNrAvailable.resx">
+      <DependentUpon>201905081558307_UpdatingNrAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905081654141_NullabelNrInStockAndNrAvailable.resx">
+      <DependentUpon>201905081654141_NullabelNrInStockAndNrAvailable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Testing|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

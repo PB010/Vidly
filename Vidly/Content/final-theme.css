@@ -1,0 +1,27 @@
+﻿div.navbar-inverse {
+    border-width: 0;
+    background-color: #F26680;
+    padding: 5px 0 5px 0;
+}
+
+.navbar-inverse a.navbar-brand {
+    color: #0D0D0D;
+}
+
+ul.nav.navbar-nav li a {
+    color: #0D0D0D;
+}
+
+div.jumbotron {
+    margin-top: 20px;
+}
+
+.btn.btn-primary {
+    background-color: #D9C5A0;
+    border-color: #CCB893;
+}
+
+    .btn.btn-primary:hover {
+        background-color: #B39F7A;
+        border-color: #C0AC87;
+    }

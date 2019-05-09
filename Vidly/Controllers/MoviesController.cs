@@ -44,7 +44,7 @@ namespace Vidly.Controllers
         }
 
         [Authorize (Roles = RoleName.CanManageMovies)]
-        public ActionResult New()
+        public ActionResult New(Movie movie)
         {
             var genreList = _context.Genres.ToList();
             var movieModel = new MovieFormViewModel
@@ -73,7 +73,11 @@ namespace Vidly.Controllers
             }
 
             if (movie.Id == 0)
+            {
+                movie.NrAvailable = movie.NrInStock;
                 _context.Movies.Add(movie);
+            }
+                
             else
             {
                 var movieInDb = _context.Movies.SingleOrDefault(m => m.Id == movie.Id);

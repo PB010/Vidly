@@ -30,7 +30,7 @@ namespace Vidly.Controllers.Api
                 if (movie.NrInStock == 0)
                     return BadRequest("This movie is not available.");
 
-                movie.NrInStock--;
+                movie.NrAvailable--;
                 
                 var rental = new Rental
                 {

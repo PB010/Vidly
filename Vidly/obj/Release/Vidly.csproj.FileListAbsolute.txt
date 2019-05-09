@@ -134,3 +134,10 @@ C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.csproj.C
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.csproj.CopyComplete
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.dll
 C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.pdb
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\Glimpse.Ado.dll
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\bin\Glimpse.EF6.dll
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.Migrations.AddedRentalModel.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.Migrations.AddedRequiredToRental.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.Migrations.AddedNrAvailableToMovieModel.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.Migrations.MadeNrInStockNonNullable.resources
+C:\Users\bIur\Desktop\Site\C#\ASP.NET App\Vidly\Vidly\obj\Release\Vidly.Migrations.Fix.resources
