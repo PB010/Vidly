@@ -36,7 +36,30 @@ namespace Vidly.Controllers.Api
         [HttpGet]
         public IHttpActionResult GetRental(int id)
         {
-            return Ok(_context.Rentals.Single(r => r.Id == id));
+            var rental = _context.Rentals
+                .Include(r => r.Movie)
+                .Include(r => r.Customer)
+                .Single(r => r.Id == id);
+
+            return Ok(Mapper.Map<Rental,RentalDto>(rental));
+        }
+
+        [HttpDelete]
+        public IHttpActionResult DeleteRental(int id)
+        {
+            var returnedRental = _context.Rentals
+                .Include(r => r.Customer)
+                .Include(r => r.Movie)
+                .Single(r => r.Id == id);
+
+            returnedRental.Movie.NrAvailable++;
+
+            _context.Rentals.Remove(returnedRental);
+
+            _context.SaveChanges();
+
+            return Ok();
+
         }
 
         //api/newRentals

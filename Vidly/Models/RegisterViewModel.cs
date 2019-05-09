@@ -15,6 +15,9 @@ namespace Vidly.Models
         [Required]
         [Display(Name = "Phone")]
         public string PhoneNr { get; set; }
+        [Required]
+        [Display(Name = "Name")]
+        public string Name { get; set; }
 
         [Required]
         [EmailAddress]

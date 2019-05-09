@@ -51,7 +51,7 @@
             });
 
             $('#customer').typeahead({
-                    minLength: 3,
+                    minLength: 1,
                     highlight: true
                 },
                 {
@@ -121,7 +121,7 @@
                         validator.resetForm();
 
                         setTimeout(function() {
-                            window.location.href = "/Rentals/MyRentals/";
+                            window.location.href = "/Rentals/index/";
                         } , 3000);
                         
                     }).fail(function() {

@@ -18,6 +18,7 @@
         <th>Customer</th>
         <th>Movie</th>
         <th>Date Rented</th>
+        <th>Return Status</th>
     </tr>
     </thead>
     <tbody>
@@ -32,7 +33,7 @@
 
             
 
-            $('#rentalTable').DataTable({
+            var table = $('#rentalTable').DataTable({
                 ajax: {
                     url: '/api/newRentals/',
                     dataSrc: ""
@@ -50,8 +51,31 @@
                     },
                     {
                         data: "dateRented"
+                    },
+                    {
+                        data: "id",
+                        render: function(data) {
+                            return "<button class='btn-link js-delete' data-rental-id=" + data + "> Delete </button>";
+                        }
                     }
                 ]
+            });
+
+            $('#rentalTable').on("click", ".js-delete", function () {
+
+                var button = $(this);
+
+                bootbox.confirm("Was this movie returned?", function(result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/api/newRentals/" + button.attr("data-rental-id"),
+                            method: "DELETE",
+                            success: function() {
+                                table.row(button.parents("tr")).remove().draw();
+                            }
+                        });
+                    };
+                });
             });
         });
     </script>

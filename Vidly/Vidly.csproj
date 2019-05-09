@@ -214,6 +214,7 @@
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MoviesDto.cs" />
     <Compile Include="Dtos\NewRentalDto.cs" />
+    <Compile Include="Dtos\RentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -333,6 +334,10 @@
     <Compile Include="Migrations\201905081654141_NullabelNrInStockAndNrAvailable.cs" />
     <Compile Include="Migrations\201905081654141_NullabelNrInStockAndNrAvailable.Designer.cs">
       <DependentUpon>201905081654141_NullabelNrInStockAndNrAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905091814381_AddedNameToRegister.cs" />
+    <Compile Include="Migrations\201905091814381_AddedNameToRegister.Designer.cs">
+      <DependentUpon>201905091814381_AddedNameToRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -719,6 +724,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905081654141_NullabelNrInStockAndNrAvailable.resx">
       <DependentUpon>201905081654141_NullabelNrInStockAndNrAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905091814381_AddedNameToRegister.resx">
+      <DependentUpon>201905091814381_AddedNameToRegister.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
