@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Vidly.Models.Rental>
+@{
+    ViewBag.Title = "My Rentals";
+}
+
+<h2>My Rentals</h2>
+<p>
+    @Html.ActionLink("New Rental",
+        "New",
+        "Rentals",
+        null,
+        new { @class = "btn btn-primary" })
+</p>
+
+<table id="rentalTable" class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>Customer</th>
+        <th>Movie</th>
+        <th>Date Rented</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            
+
+            $('#rentalTable').DataTable({
+                ajax: {
+                    url: '/api/newRentals/',
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data: "customer.name",
+                        render: function(data, type, customer) {
+                            return "<a href='https://localhost:44349/customers/details/" + customer.customer.id + "'>" + data + "</a>";
+                        }
+                        
+                    },
+                    {
+                        data: "movie.name"
+                    },
+                    {
+                        data: "dateRented"
+                    }
+                ]
+            });
+        });
+    </script>
+}

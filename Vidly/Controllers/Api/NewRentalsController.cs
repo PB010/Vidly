@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -9,6 +10,7 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.Api
 {
+    [Authorize]
     public class NewRentalsController : ApiController
     {
 
@@ -19,8 +21,28 @@ namespace Vidly.Controllers.Api
             _context = new ApplicationDbContext();
         }
 
+        //api/newRentals
+
+        [HttpGet]
+        public IHttpActionResult GetRentals()
+        {
+            
+            return Ok(_context.Rentals
+                .Include(r => r.Customer)
+                .Include(r => r.Movie));
+        }
+
+        //api/newRentals/1
+        [HttpGet]
+        public IHttpActionResult GetRental(int id)
+        {
+            return Ok(_context.Rentals.Single(r => r.Id == id));
+        }
+
+        //api/newRentals
+
         [HttpPost]
-        public IHttpActionResult GetRentals(NewRentalDto newRental)
+        public IHttpActionResult CreateRentals(NewRentalDto newRental)
         {
             var customer = _context.Customers.Single(c => c.Id == newRental.CustomerId);
             var movies = _context.Movies.Where(m => newRental.MovieIds.Contains(m.Id)).ToList();

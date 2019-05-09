@@ -8,6 +8,7 @@ using Vidly.Models;
 
 namespace Vidly.Controllers
 {
+    [Authorize]
     public class RentalsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -23,9 +24,9 @@ namespace Vidly.Controllers
             return View();
         }
 
-        public ActionResult MyRentals()
+        public ActionResult Index()
         {
-            var myRental = _context.Rentals.Include(r => r.Movie).ToList();
+            var myRental = _context.Rentals.Include(r => r.Movie).Include(r => r.Customer);
 
             return View(myRental);
         }
